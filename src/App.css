@@ -30,3 +30,12 @@
 .rating {
   color: brown;
 }
+
+.header {
+  margin: 2rem;
+}
+.headerImage {
+  /* to make this resoponsive */
+  max-width: 100%;
+  margin: 0 auto;
+}

@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+import Header from "./components/header";
+
 import "./App.css";
 import useSWR from "swr";
 
@@ -13,6 +14,8 @@ function App() {
 
   return (
     <div className="App">
+      <Header data={data}></Header>
+
       <div className="cardContainer">
         {data.data.map(anime => {
           let {
