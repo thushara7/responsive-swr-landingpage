@@ -26,7 +26,7 @@ function App() {
               <img className="image" src={medium} alt="poster"></img>
               <h1>{canonicalTitle}</h1>
               <p>{synopsis.substring(0, 200)}...</p>
-              <p>{averageRating}</p>
+              <p className="rating">{averageRating}</p>
             </div>
           );
         })}

@@ -1,15 +1,32 @@
 .App {
-  text-align: center;
+  background-color: white;
 }
-
+/* this is for the main container */
 .cardContainer {
   margin: 2rem;
+  /* this does nothing */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-start: minmax(200px auto);
-  gap: 2rem;
+  /* repeart (no-of-elements, desired-width)  fr means fraction of*/
+  grid-template-columns: repeat(4, 1fr);
+  /* this is my default rows */
+  /* grid-auto-rows: 150px; */
+  /* grid-template-rows: 200px;   this is to set the height of the first row separately*/
+  grid-gap: 2rem;
+  text-align: left;
+}
+@media screen and (max-width: 587px) {
+  .cardContainer {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .image {
   border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.rating {
+  color: brown;
 }
